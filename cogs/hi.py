@@ -13,7 +13,7 @@ class Hi(commands.Cog):
         print("Started!")
         while True:
             nowMin = datetime.now(pytz.timezone("Hongkong")).minute
-            if nowMin == 0:
+            if nowMin == 30:
                 nowHour = datetime.now(pytz.timezone("Hongkong")).hour
                 while True:
                     channel = self.bot.get_channel(795545262822260756)

@@ -7,7 +7,7 @@ bot = commands.Bot(command_prefix="p?")
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name="powered by discord.py"))
+    await bot.change_presence(status=discord.Status.invisible)
     print('We have logged in as {0.user}. Bot is ready.'.format(bot))
 
 for i in os.listdir('./cogs'):
